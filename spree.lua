@@ -203,6 +203,17 @@ EXECButton.MouseButton1Click:Connect(function()
     end
 end)
 
+EXECButton.MouseButton1Click:Connect(function()
+	if CMDBox.Text == "cfact" then
+local args = {
+    [1] = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://uselessfacts.jsph.pl/random.json?language=en")).text,
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+    end
+end)
+
 
 
 
