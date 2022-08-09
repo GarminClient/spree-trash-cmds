@@ -227,7 +227,7 @@ EXECButton.MouseButton1Click:Connect(function()
 end)
 EXECButton.MouseButton1Click:Connect(function()
 	if CMDBox.Text == "ks" then
-	   spreeCMDS:Destroy()
+	   SpreeCMDS:Destroy()
     end
 end)
 
