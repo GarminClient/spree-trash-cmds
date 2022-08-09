@@ -220,8 +220,16 @@ EXECButton.MouseButton1Click:Connect(function()
     end
 end)
 
-
-
+EXECButton.MouseButton1Click:Connect(function()
+	if CMDBox.Text == "reset" then
+	   plr.Character.Humanoid.Health = 0
+    end
+end)
+EXECButton.MouseButton1Click:Connect(function()
+	if CMDBox.Text == "ks" then
+	   spreeCMDS:Destroy()
+    end
+end)
 
 
 
