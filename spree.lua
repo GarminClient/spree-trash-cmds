@@ -261,8 +261,4 @@ end)
 
 
 
---other functions
 
-CloseLabel.MouseButton1Click:Connect(function()
-    LogsFrame.Visible = false
-end)
